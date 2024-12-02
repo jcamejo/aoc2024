@@ -20,7 +20,6 @@ def safe_report?(report)
       next false
     elsif main_order.nil?
       main_order = get_order(previous_level, level)
-      next true if main_order.nil?
     end
 
     current_order = get_order(previous_level, level)
